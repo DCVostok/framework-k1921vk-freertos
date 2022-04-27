@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.include": "verilog",
+        "*.v": "verilog",
+        "*.rmd": "markdown",
+        "freertos.h": "c"
+    }
+}

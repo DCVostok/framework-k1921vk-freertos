@@ -1,0 +1,17 @@
+{
+  "name": "framework-k1921vk-freertos",
+  "version": "10.4.6",
+  "description": "FreeRTOS support for NIIET k1921vk microcontrollers",
+  "keywords": [
+    "framework",
+    "freertos",
+    "freeRTOS",
+    "k1921vk",
+    "1921",
+    "niiet"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DCVostok/framework-k1921vk-freertos"
+  }
+}
