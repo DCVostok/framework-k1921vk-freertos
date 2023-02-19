@@ -1,4 +1,5 @@
 # framework-k1921vk-freeRTOS
+[![PlatformIO Registry](https://badges.registry.platformio.org/packages/dcvostok/tool/framework-k1921vk-freertos.svg)](https://registry.platformio.org/tools/dcvostok/framework-k1921vk-freertos)  
 This repo adds the support freeRTOS for [NIIET k1921vk MCUs](https://niiet.ru/product-category/chips/microcont/risc-32-bit/) and [PlatformIO](http://platformio.org).
 
 # Usage with VS_Code+PlatformIO
