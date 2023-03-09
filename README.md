@@ -55,19 +55,20 @@ board_build.freertos.heap_model = heap_4
 #define configMINIMAL_STACK_SIZE		( ( unsigned short ) 256 )
 #define configTOTAL_HEAP_SIZE			( ( size_t ) ( 50 * 1024 ) )
 
-#define configMAX_TASK_NAME_LEN			( 20 )
-#define configUSE_TRACE_FACILITY		1
-#define configUSE_16_BIT_TICKS			0
-#define configIDLE_SHOULD_YIELD			1
-#define configUSE_MUTEXES				1
-#define configQUEUE_REGISTRY_SIZE		8
-#define configCHECK_FOR_STACK_OVERFLOW	0
-#define configUSE_RECURSIVE_MUTEXES		1
-#define configUSE_MALLOC_FAILED_HOOK	0
-#define configUSE_APPLICATION_TASK_TAG	0
-#define configUSE_COUNTING_SEMAPHORES	1
-#define configGENERATE_RUN_TIME_STATS	0
-#define configSUPPORT_STATIC_ALLOCATION 0
+#define configMAX_TASK_NAME_LEN				( 20 )
+#define configUSE_TRACE_FACILITY			1
+#define configUSE_16_BIT_TICKS				0
+#define configIDLE_SHOULD_YIELD				1
+#define configUSE_MUTEXES					1
+#define configQUEUE_REGISTRY_SIZE			8
+#define configCHECK_FOR_STACK_OVERFLOW		0
+#define configUSE_RECURSIVE_MUTEXES			1
+#define configUSE_MALLOC_FAILED_HOOK		0
+#define configUSE_APPLICATION_TASK_TAG		0
+#define configUSE_COUNTING_SEMAPHORES		1
+#define configGENERATE_RUN_TIME_STATS		0
+#define configSUPPORT_STATIC_ALLOCATION 	0
+#define configSUPPORT_DYNAMIC_ALLOCATION 	1
 
 #define configUSE_STATS_FORMATTING_FUNCTIONS 1
 
@@ -129,6 +130,14 @@ standard names. */
 #define configTASK_NOTIFICATION_ARRAY_ENTRIES (3)
 
 #endif /* FREERTOS_CONFIG_H */
+```
 
-...
+# Disable heap
+1. Set `board_build.freertos.heap_model = none` in `platformio.ini`.
+2. Set this options in `FreeRTOSConfig.h` 
+
+```cpp
+#define configTOTAL_HEAP_SIZE              (0)
+#define configSUPPORT_STATIC_ALLOCATION     1
+#define configSUPPORT_DYNAMIC_ALLOCATION    0
 ```
