@@ -1,6 +1,6 @@
 {
   "name": "framework-k1921vk-freertos",
-  "version": "10.4.6",
+  "version": "10.5.1",
   "description": "FreeRTOS support for NIIET k1921vk microcontrollers",
   "keywords": [
     "framework",
